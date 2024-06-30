@@ -1,0 +1,9 @@
+.idea
+*.iml
+out
+gen
+.vscode/settings.json
+.VSCodeCounter
+target
+**.jar
+lib
