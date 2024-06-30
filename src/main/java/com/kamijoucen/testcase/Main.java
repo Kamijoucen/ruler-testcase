@@ -8,6 +8,7 @@ import org.apache.commons.lang3.StringUtils;
 import com.kamijoucen.ruler.Ruler;
 import com.kamijoucen.ruler.config.impl.RulerConfigurationImpl;
 import com.kamijoucen.ruler.module.RulerRunner;
+import com.kamijoucen.testcase.function.RsonFunction;
 
 public class Main {
 
@@ -15,6 +16,7 @@ public class Main {
     static {
         configuration.setMaxStackDepth(100);
         configuration.setMaxLoopNumber(10000);
+        configuration.registerGlobalFunction(new RsonFunction());
     }
 
     public static void main(String[] args) throws IOException {
