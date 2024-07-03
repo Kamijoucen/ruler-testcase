@@ -90,6 +90,13 @@
                         <phase>package</phase>
                     </execution>
                 </executions>
+                <configuration>
+                    <buildArgs>
+                        <buildArg>--gc=G1</buildArg>
+                        <buildArg>--pgo-instrument</buildArg>
+                        <buildArg>-march=native</buildArg>
+                    </buildArgs>
+                </configuration>
             </plugin>
         </plugins>
     </build>

@@ -1,0 +1,13 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "com.kamijoucen.testcase.Main",
+            "projectName": "ruler-testcase",
+            "args": ["${workspaceFolder}/src/test/resources/autotest.txt"],
+        }
+    ]
+}

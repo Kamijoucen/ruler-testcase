@@ -1,0 +1,14 @@
+import "http" http;
+
+var loginUrl = "http://127.0.0.1:8888/mall/v1/account/login";
+var loginResp = http.PostC({
+    url: loginUrl,
+    header: {
+        "Content-Type": "application/json"
+    },
+    body: """{"phone": "18888888888","password": "123456789"}"""
+});
+// 登录token
+var token = Rson(loginResp.body).data.token;
+
+println(token);
